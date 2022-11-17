@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-colour1:hsl(0, 100%, 74%);
+    --primary-colour2:hsl(154, 59%, 51%);
+
+    --accent-colour1:hsl(248, 32%, 49%);
+
+    --neutral-colour1:hsl(249, 10%, 26%);
+    --neutral-colour2:hsl(246, 25%, 77%);
+
+    --font-size:16px;
+}
+body{
+    background: url(./bg-intro-desktop.png), hsl(0, 100%, 74%) ;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    padding: 20px;
+}
+.first-con{
+    max-width: 500px;
+}
+.first-con h1{
+    color: #fff;
+    font-size: 2.5em;
+}
+.first-con p{
+    color: #fff;
+    line-height: 30px;
+    max-width: 450px;
+    margin-top: 10px;
+}
+.second-box{
+    max-width: 600px;
+}
+.second-box .first-box{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-colour1);
+    padding: 22px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+.second-box .first-box p{
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.second-box .first-box p span{
+    font-weight: 100;
+}
+.form-box{
+    width: 100%;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.form-control{
+    width: 100%;
+    position: relative;
+}
+.form-control input{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid var(--neutral-colour2);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.form-control img{
+    position: absolute;
+    right: 1rem;
+    top: 1.6rem;
+    display: none;
+}
+.btn-control{
+    width: 100%;
+    line-height: 50px;
+}
+.btn-control button{
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-colour2);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.btn-control p{
+    font-size: 14px;
+}
+.btn-control p span{
+    font-weight: bold;
+    color: var(--primary-colour1);
+}
+.error{
+    color: var(--primary-colour1);
+    font-size: 15px;
+    float: right;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width:900px) {
+    body{
+        background: url(./bg-intro-mobile.png), hsl(0, 100%, 74%) ;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5em;
+        padding: 20px;
+    }
+    .first-con{
+        text-align: center;
+        max-width: 500px;
+    }
+}
